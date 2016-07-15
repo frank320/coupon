@@ -1,0 +1,135 @@
+// 引入基本的css
+@import 'base.less';
+// 引入字体图标
+@import 'font.less';
+//引入border-box函数文件
+@import "mixins.less";
+
+.index-page {
+  .items {
+    padding: 0 0.75rem;
+    //标题
+    .title {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      h4 {
+        line-height: 1;
+      }
+      span {
+        color: #B1B0AF;
+      }
+    }
+    //添加按钮
+    .item.add {
+      height: 7rem;
+      font-size: 3.375rem;
+      text-align: center;
+      border: 0.09375rem dashed #dedede;
+      padding: 1.125rem 0;
+      .box-sizing;
+      color: #aeaeae;
+      background-color: #FFF;
+      margin-bottom: 1rem;
+      a {
+        font-size: 0.8125rem;
+        line-height: 1;
+        color: #aeaeae;
+      }
+    }
+    //券实体
+    .item:not(.add) {
+      .body {
+        height: 7.3rem;
+        border-radius: 0.2rem;
+        .box-sizing;
+        padding: 0.8rem;
+        color: #fff;
+        font-family: '黑体';
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        line-height: 1.5;
+        background-image: url(../images/sale.png);
+        -webkit-background-size: 4.56rem;
+        background-size: 4.56rem;
+        background-repeat: no-repeat;
+        background-position: right -0.8rem;
+        .name {
+          width: 100%;
+        }
+        .extra {
+          font-size: 0.75rem;
+          width: 100%;
+        }
+        .time {
+          float: left;
+        }
+        .tip {
+          float: right;
+          background-color: rgba(0, 0, 0, .5);
+        }
+      }
+      //操作券
+      .act {
+        height: 2.3rem;
+        .box-sizing;
+        padding-top: 0.25rem;
+        background: url(../images/icon.png) repeat-x;
+        margin: -0.25rem 0 1rem; //把操作块上移
+        //position: relative;//保证在券主体的上面显示
+        ul {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          font-size: 0.75rem;
+          background: #fff;
+          border-radius: 0 0 0.2rem 0.2rem;
+          li {
+            flex: 1;
+            text-align: center;
+          }
+          a {
+            color: #888888;
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .all {
+    .body {
+      background-color: #55BB75;
+    }
+    .name {
+      p {
+        font-size: 0.75rem;
+      }
+      h4{
+        font-size: 1.5rem;
+      }
+    }
+    .act i {
+      color: #55BB75;
+    }
+  }
+  .coupon {
+    .body {
+      background-color: #A874BB;
+      margin-top: 1rem;
+    }
+    .act i {
+      color: #A874BB;
+    }
+  }
+  //提示
+  .tips {
+    padding: 1.8rem 0.75rem;
+    font-size: 0.75rem;
+    color: #888888;
+    line-height: 1rem;
+  }
+}

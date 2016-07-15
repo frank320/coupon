@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优惠活动</title>
+    <!-- <link rel="stylesheet/less" href="./css/base.less"> -->
+    <!--<link rel="stylesheet/less" href="css/index.less">-->
+    <!--<script src="js/less.js"></script>-->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="viewport index-page">
+    <!--toolbar-->
+    <div class="toolbar">
+        <img src="./images/topbar.png" alt=""/>
+    </div>
+    <!--主体-->
+    <!--全场优惠-->
+    <div class="items">
+        <!--标题-->
+        <div class="title">
+            <h4>全场优惠</h4>
+            <span>0/1</span>
+        </div>
+        <!-- 添加按钮 -->
+        <div class="item add">
+            <i class="icon-add"></i>
+            <a href="javascript:;">添加优惠</a>
+        </div>
+        <!--券-->
+        <div class="item all">
+            <!--券主体-->
+            <div class="body">
+                <div class="name">
+                    <h4>全场满300减100</h4>
+
+                    <p>双十一优惠全场满就减</p>
+                </div>
+                <div class="extra">
+                    <div class="time"><i class="icon-time"></i>16-06-06至16-08-08</div>
+                    <div class="tip">正在进行</div>
+                </div>
+            </div>
+            <!--操作-->
+            <div class="act">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-edit"></i>编辑
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-share"></i>分享
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--优惠券-->
+        <!--标题-->
+        <div class="title">
+            <h4>优惠券</h4>
+            <span>0/3</span>
+        </div>
+        <!--券-->
+        <div class="item coupon">
+            <!--券主体-->
+            <div class="body">
+                <div class="name">
+                    <h4>全场满300减100</h4>
+                </div>
+                <div class="extra">
+                    <p>已领取/已使用：20/22 发行总数：1000</p>
+
+                    <div class="time"><i class="icon-time"></i>16-06-06至16-08-08</div>
+                    <div class="tip">正在进行</div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="name">
+                    <h4>全场满300减100</h4>
+                </div>
+                <div class="extra">
+                    <p>已领取/已使用：20/22 发行总数：1000</p>
+
+                    <div class="time"><i class="icon-time"></i>16-06-06至16-08-08</div>
+                    <div class="tip">正在进行</div>
+                </div>
+            </div>
+            <!--操作-->
+            <div class="act">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-cancle"></i>作废
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-preview"></i>预览
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-share"></i>分享
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 添加按钮 -->
+        <div class="item add">
+            <i class="icon-add"></i>
+            <a href="javascript:;">添加优惠券</a>
+        </div>
+
+    </div>
+    <!-- 备注 -->
+    <div class="tips">
+        <dl>
+            <dt>提示：</dt>
+            <dd>1、买家下单时只可选择其一（全场优惠或优惠券）</dd>
+            <dd>2、优惠券一旦设置后不可修改</dd>
+        </dl>
+    </div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script>
+    $('.add').tap(function(){
+        $(this).hide();
+    });
+</script>
+</body>
+</html>
